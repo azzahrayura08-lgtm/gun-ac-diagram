@@ -38,7 +38,7 @@ jobs:
 
       - name: Install project dependencies
         working-directory: ${{ env.PROJECT_DIR }}
-        run: npm install --no-audit --no-fund
+        run: npm install --no-audit --no-fund --legacy-peer-deps
 
       - name: Add Capacitor Android support
         working-directory: ${{ env.PROJECT_DIR }}
