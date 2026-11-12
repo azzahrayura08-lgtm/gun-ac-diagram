@@ -43,7 +43,7 @@ jobs:
       - name: Add Capacitor Android support
         working-directory: ${{ env.PROJECT_DIR }}
         run: |
-          npm install @capacitor/core @capacitor/android @capacitor/cli --no-audit --no-fund
+          npm install @capacitor/core @capacitor/android @capacitor/cli --no-audit --no-fund --legacy-peer-deps
           cat > capacitor.config.json <<'EOF'
           {
             "appId": "com.sas.gunac",
